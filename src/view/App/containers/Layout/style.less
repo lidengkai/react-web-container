@@ -1,0 +1,59 @@
+@import '@/config.less';
+
+.root {
+  min-height: 100vh;
+}
+
+.sider {
+  height: calc(100vh - 48px);
+  position: sticky;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+
+  .logo {
+    height: 60px;
+    padding: 12px 18px;
+
+    &::after {
+      content: '';
+      display: block;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(255, 255, 255, 0.3);
+    }
+  }
+
+  .menu {
+    flex: 1;
+    overflow: auto;
+  }
+}
+
+.header {
+  background: #ffffff;
+  box-shadow: 0 1px 4px rgba(0, 21, 41, .08);
+  z-index: 1;
+
+  .right {
+    height: 100%;
+    float: right;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 14px;
+
+    .item {
+      padding: 0 12px;
+      cursor: pointer;
+
+      &:hover {
+        background-color: #e6f7ff;
+      }
+    }
+  }
+}
+
+.footer {
+  text-align: center;
+}
